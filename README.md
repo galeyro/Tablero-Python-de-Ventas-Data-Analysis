@@ -1,73 +1,78 @@
-# 📊 Tablero Analítico de Ventas — TechSales
+# 📊 TechSales Analytics Dashboard
 
-Dashboard interactivo desarrollado en **Python con Streamlit** para analizar el rendimiento comercial de un e-commerce durante sus últimos 6 meses de operación.
+Interactive sales dashboard built with **Python & Streamlit** to analyze the commercial performance of a TechSales e-commerce over its last 6 months of operation.
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://tablero-python-de-ventas-data-analysis-hrhe3mfneqcfdmzrqqvupe.streamlit.app/)
 
-
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
 ---
 
-## 🗂️ Estructura del Proyecto
+## 📸 Preview
+
+![Dashboard Overview](image.png)
+![Charts Section](image-1.png)
+![Interactive Scatter](image-2.png)
+
+---
+
+## 🗂️ Project Structure
 
 ```
 📁 Tablero Python de Ventas - Data Analysis/
-├── Taller.py                                    # Aplicación principal de Streamlit
-├── Taller.ipynb                                 # Notebook de exploración y análisis previo
-├── Ventas TeachSales.csv                        # Dataset fuente (separado por ';')
-├── Caso de Estudio E-commerce TechSales.pdf     # Documento del caso de estudio
+├── Taller.py                                    # Main Streamlit application
+├── Taller.ipynb                                 # Exploratory analysis notebook
+├── Ventas TeachSales.csv                        # Source dataset (semicolon-separated)
+├── Caso de Estudio E-commerce TechSales.pdf     # Case study document
+├── requirements.txt                             # Python dependencies
 └── README.md
 ```
 
-> 📄 El archivo **`Caso de Estudio E-commerce TechSales.pdf`** contiene el enunciado y contexto académico del proyecto.
+> 📄 **`Caso de Estudio E-commerce TechSales.pdf`** contains the academic case study brief and context for this project.
 
 ---
 
-## 📌 Descripción
+## 📌 Dashboard Overview
 
-El tablero presenta visualizaciones clave sobre las ventas del e-commerce **TechSales**, dividido en dos secciones principales:
+The dashboard presents key visualizations on TechSales sales data, split into two main sections:
 
-### Visión General
+### General Overview
 
-| Gráfico | Descripción |
+| Chart | Description |
 |---|---|
-| **a) Ingresos vs Volumen por Categoría** | Barplot comparando monto total y número de transacciones por categoría |
-| **b) Distribución por Región** | Gráfico circular con el porcentaje de ingresos por región geográfica |
-| **c) Tendencia Acumulada** | Líneas de ventas acumuladas en el tiempo, desglosadas por categoría |
+| **a) Revenue vs Volume by Category** | Bar chart comparing total revenue and number of transactions per product category |
+| **b) Market Performance by Region** | Pie chart showing the percentage of total revenue generated per geographic region |
+| **c) Cumulative Sales Trend** | Line chart tracking accumulated sales over time, broken down by category |
 
-### Visión Detallada
+### Detailed View
 
-| Gráfico | Descripción |
+| Chart | Description |
 |---|---|
-| **d/e) Dispersión Interactiva** | Scatter plot (Plotly) con monto vs fecha, identificación de productos al pasar el cursor y detección visual de anomalías |
+| **d/e) Interactive Scatter Plot** | Plotly scatter plot (amount vs date) with product-level hover detail and visual anomaly detection |
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Tech Stack
 
-| Librería | Uso |
+| Library | Purpose |
 |---|---|
-| `streamlit` | Framework del dashboard web |
-| `pandas` | Carga, limpieza y agrupación de datos |
-| `matplotlib` | Base de renderizado de gráficos estáticos |
-| `seaborn` | Gráficos de líneas y barras con estilos |
-| `plotly.express` | Gráfico de dispersión interactivo |
+| `streamlit` | Web dashboard framework |
+| `pandas` | Data loading, cleaning and aggregation |
+| `matplotlib` | Static chart rendering base |
+| `seaborn` | Styled line and bar charts |
+| `plotly.express` | Interactive scatter chart |
 
 ---
 
-## ▶️ Cómo Ejecutar
+## ▶️ Run Locally
 
-1. Instala las dependencias:
+1. Install dependencies:
 
 ```bash
-pip install streamlit pandas matplotlib seaborn plotly
+pip install -r requirements.txt
 ```
 
-2. Asegúrate de que `Ventas TeachSales.csv` esté en la misma carpeta que `Taller.py`.
+2. Make sure `Ventas TeachSales.csv` is in the same folder as `Taller.py`.
 
-3. Ejecuta el dashboard:
+3. Launch the dashboard:
 
 ```bash
 streamlit run Taller.py
@@ -77,14 +82,14 @@ streamlit run Taller.py
 
 ## 📁 Dataset
 
-El archivo `Ventas TeachSales.csv` contiene las siguientes columnas:
+The file `Ventas TeachSales.csv` contains the following columns:
 
-| Columna | Descripción |
+| Column | Description |
 |---|---|
-| `Fecha` | Fecha de la venta (formato DD/MM/YYYY) |
-| `Categoria` | Categoría del producto |
-| `Producto` | Nombre del producto |
-| `Monto_Venta` | Monto de la transacción en dólares |
-| `Region` | Región geográfica de la venta |
+| `Fecha` | Transaction date (DD/MM/YYYY format) |
+| `Categoria` | Product category |
+| `Producto` | Product name |
+| `Monto_Venta` | Sale amount in USD |
+| `Region` | Geographic region |
 
-> **Separador:** `;` | **Codificación:** UTF-8
+> **Separator:** `;` &nbsp;|&nbsp; **Encoding:** UTF-8
