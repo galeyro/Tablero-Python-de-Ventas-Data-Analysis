@@ -2,6 +2,10 @@
 
 Dashboard interactivo desarrollado en **Python con Streamlit** para analizar el rendimiento comercial de un e-commerce durante sus últimos 6 meses de operación.
 
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
 ---
 
 ## 🗂️ Estructura del Proyecto
