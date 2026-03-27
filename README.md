@@ -2,6 +2,8 @@
 
 Dashboard interactivo desarrollado en **Python con Streamlit** para analizar el rendimiento comercial de un e-commerce durante sus últimos 6 meses de operación.
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://tablero-python-de-ventas-data-analysis-hrhe3mfneqcfdmzrqqvupe.streamlit.app/)
+
 
 ![alt text](image.png)
 ![alt text](image-1.png)
